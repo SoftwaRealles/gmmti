@@ -1,0 +1,5 @@
+$font-default: 16; // font-size: default
+
+@function em($pixels, $fonts: $font-default){
+  @return #{$pixels / $fonts}em;
+}

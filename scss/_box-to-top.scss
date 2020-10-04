@@ -1,0 +1,28 @@
+.box-to-top{
+  width: em(40);
+  height: em(40);
+  background: $red;
+  position: fixed;
+  border-radius: em(10);
+  bottom: em(20);
+  right: -90%;
+  opacity: .5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back-to-top-link::before {
+  font-size: 1.2em;
+  color: $white;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+.back-to-top-link{
+  text-decoration: none;
+}
+.active{
+  opacity: 1;
+  right: 20px;
+  transition: all 0.4s ease-in-out;
+}
